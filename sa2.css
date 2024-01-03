@@ -1,0 +1,183 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-size: auto;
+  font-weight: bold;
+}
+
+div {
+  width: 80%;
+  margin: auto;
+}
+
+.main {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#bg {
+  width: 100%;
+  height: 1920px;
+  opacity: 0.5;
+}
+
+#desk-tab-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1.25%;
+  overflow: hidden;
+  background-color: #0B0054;
+}
+
+#desk-tab-li, #desk-tab-a {
+  float: left;
+  display: block;
+  padding-left: 1.25%;
+  padding-right: 1.25%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+#mob-ul, #mob-li, #mob-a {
+  display: none;
+}
+
+#heading, #footer, .socials, #social-promo, .videos, #vid-promo, #channel-link, #main-web-link, #p {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#p {
+  top: 12%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#main-web-link {
+  top: 18%;
+}
+
+#channel-link {
+  top: 20%;
+}
+
+#link {
+  color: white;
+}
+
+#vid-promo {
+  top: 26.5%;
+}
+
+.videos {
+  top: 51%;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 5%;
+}
+
+#vid-card {
+  background-color: white;
+  color: #0B0054;
+  padding: 1.5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+#vid-img {
+  width: 100%;
+}
+
+#social-promo {
+  top: 83%;
+}
+
+.socials {
+  top: 89%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-links {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#social-img {
+  width: 65%;
+  height: 50%;
+  margin: 10%;
+}
+
+#footer {
+  top: 97%;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+  #desk-tab-ul {
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    max-width: 480px;
+    font-size: 70%;
+  }
+  #desk-tab-ul, #desk-tab-li, #desk-tab-a {
+    display: none;
+  }
+  #mob-ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 4%;
+    padding: 1.25%;
+    overflow: hidden;
+    background-color: #0B0054;
+    display: block !important;
+  }
+  #mob-li, #mob-a {
+    float: left;
+    display: block;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  #mob-nav-img {
+    height: 20px;
+    width: 20px;
+  }
+  #main-web-link {
+    top: 16%;
+  }
+  #channel-link {
+    top: 17%;
+  }
+  #vid-promo {
+    top: 20%;
+  }
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1%;
+  }
+  #social-promo {
+    top: 90%;
+  }
+  .socials {
+    top: 93%;
+  }
+}/*# sourceMappingURL=sa2.css.map */
